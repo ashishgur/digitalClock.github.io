@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/clock.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Delicious+Handrawn&family=Kanit:wght@500&family=Orbitron:wght@500&family=Pacifico&family=Poppins:wght@200;300&family=Roboto+Mono:wght@300;400&family=Single+Day&display=swap');
+      </style>
+    <title>Digital-Clock</title>
+</head>
+<body>
+
+    <!-- defining container -->
+    <div id="container">
+        <div class="one">
+            <p>Ashish</p> <br>
+            <p> Web-Dev.</p>
+        </div>
+        <div class="clock">
+            
+            
+                 <div style="font-size: 145px;"> <p id="hr"></p></div>
+           <p class="colon">:</p> <div  style="font-size: 145px;"> <p id="min"></p></div>
+           <p class="colon">:</p> <div  style="font-size: 145px;"> <p id="sec"></p></div>
+            
+        </div>
+
+    </div>
+
+    <script>
+        <!-- defining function -->
+
+        function displayTime(){
+            time=new Date();
+            let hr_time=time.getHours();
+            document.getElementById('hr').innerHTML=hr_time;
+
+            let min_time=time.getMinutes();
+            document.getElementById('min').innerHTML=min_time;
+
+            let sec_time=time.getSeconds();
+            document.getElementById('sec').innerHTML=sec_time;
+
+
+            
+        }
+
+        setInterval(displayTime,1000)
+    </script>
+</body>
+</html>

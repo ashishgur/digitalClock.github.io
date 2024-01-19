@@ -1,0 +1,59 @@
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/assets/bgone.jpeg);
+    background-color: rgb(35, 3, 3);
+    background-position:center;
+    /* background-color: black; */
+    background-repeat: repeat repeat no-repeat;
+    background-size: cover;
+}
+
+#container .clock{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    opacity: 0.8;
+    font-size: 125px;
+    letter-spacing: 25px;
+    font-weight: bold;
+    
+    
+}
+
+#container .one{
+    width: (100%-85px);
+    height: 120px;
+    color: white;
+    padding-top: 85px;
+    padding-left: 85px;
+    
+}
+#container .one p{
+    color:green;
+    letter-spacing: 5px;
+    font-family: 'Orbitron', sans-serif;
+    
+
+}
+@media (max-width:1000px) {
+    #container .clock{
+        display: flex;
+        flex-direction: column;
+    }
+    #container .colon{
+        display: none;
+    }
+}
